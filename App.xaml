@@ -17,7 +17,7 @@
         <Shell FlyoutBehavior="Flyout" FlyoutHeaderBehavior="Fixed" FlyoutVerticalScrollMode="Auto">
             <Shell.FlyoutHeader>
                 <Grid BackgroundColor="Blue" Padding="10">
-                    <Label Text="HM_FlyoutNavegation"
+                    <Label Text="JM_FlyoutNavegation"
                            TextColor="White"/>
                 </Grid>
             </Shell.FlyoutHeader>
