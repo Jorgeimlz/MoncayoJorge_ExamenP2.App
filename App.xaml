@@ -1,0 +1,38 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MoncayoJorge_ExamenP2"
+             x:Class="MoncayoJorge_ExamenP2.App"
+             xmlns:views ="clr-namespace:MoncayoJorge_ExamenP2.Views">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+    <Application.MainPage>
+        <Shell FlyoutBehavior="Flyout" FlyoutHeaderBehavior="Fixed" FlyoutVerticalScrollMode="Auto">
+            <Shell.FlyoutHeader>
+                <Grid BackgroundColor="Green" Padding="10">
+                    <Label Text="HM_FlyoutNavegation"
+                           TextColor="White"/>
+                </Grid>
+            </Shell.FlyoutHeader>
+            <FlyoutItem Title="Notes" Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}">
+                <ShellContent ContentTemplate="{DataTemplate views:AllNotesPageJorge}" Route="MainPage" />
+            </FlyoutItem>
+            <FlyoutItem Title="About" Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}">
+                <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" Route="AboutPage" />
+            </FlyoutItem>
+            <Shell.FlyoutFooter>
+                <Grid BackgroundColor="Green" Padding="10">
+                    <Label Text="Examen P2_HaylandMontalvo"
+                           TextColor="White"/>
+                </Grid>
+            </Shell.FlyoutFooter>
+        </Shell>
+    </Application.MainPage>
+</Application>

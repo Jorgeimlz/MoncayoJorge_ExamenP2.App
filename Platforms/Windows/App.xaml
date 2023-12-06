@@ -1,0 +1,8 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="MoncayoJorge_ExamenP2.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:MoncayoJorge_ExamenP2.WinUI">
+
+</maui:MauiWinUIApplication>
