@@ -16,7 +16,7 @@
     <Application.MainPage>
         <Shell FlyoutBehavior="Flyout" FlyoutHeaderBehavior="Fixed" FlyoutVerticalScrollMode="Auto">
             <Shell.FlyoutHeader>
-                <Grid BackgroundColor="Green" Padding="10">
+                <Grid BackgroundColor="Blue" Padding="10">
                     <Label Text="HM_FlyoutNavegation"
                            TextColor="White"/>
                 </Grid>
@@ -28,8 +28,8 @@
                 <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" Route="AboutPage" />
             </FlyoutItem>
             <Shell.FlyoutFooter>
-                <Grid BackgroundColor="Green" Padding="10">
-                    <Label Text="Examen P2_HaylandMontalvo"
+                <Grid BackgroundColor="Blue" Padding="10">
+                    <Label Text="Examen Progreso 2 Jorge Moncayo"
                            TextColor="White"/>
                 </Grid>
             </Shell.FlyoutFooter>
